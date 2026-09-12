@@ -1,6 +1,6 @@
 # Full-variable positivity for the bamboo-tree weak-rank functional
 
-**Prepared v2.0.0, 12 September 2026; not yet published.** Underlying derivation: formal-pvnp commit **90868e5d032db6dba4cdf61d8a3fe07bfacdbfd7**. Exact source provenance and informal AI-review status are in [REVIEW.md](REVIEW.md). This preparation does not claim that a release, tag, or DOI has been published.
+**Version 2.0.0, 12 September 2026.** Underlying derivation: formal-pvnp commit **90868e5d032db6dba4cdf61d8a3fe07bfacdbfd7**. Exact source provenance and informal AI-review status are in [REVIEW.md](REVIEW.md).
 
 ## Theorem and scope
 
@@ -205,4 +205,4 @@ The final inequality proves the stated theorem for the unchanged source function
 
 The proof uses finite Fourier analysis, rank counting, conditional covariance, finite-dimensional orthogonal decomposition and diagonal dominance. It supplies no efficient evaluation procedure: there are sum_(j<=2D) binom(2m,j) contexts and complete-row spaces can be exponentially large. No experiment or computational benchmark is part of the proof.
 
-[REVIEW.md](REVIEW.md) records exact provenance, contributions and informal review limitations; [SOURCES.md](SOURCES.md) records primary comparisons. Version 2.0.0 is prepared locally and not yet published.
+[REVIEW.md](REVIEW.md) records exact provenance, contributions and informal review limitations; [SOURCES.md](SOURCES.md) records primary comparisons. Version 2.0.0, 12 September 2026.

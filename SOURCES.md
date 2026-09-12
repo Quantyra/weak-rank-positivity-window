@@ -28,4 +28,4 @@ These comparisons came from a bounded AI-agent primary-source audit. They neithe
 
 The full conditional-correlation argument needs no junction-tree or global-law construction. The source's local consistency is credited, while the conditional rank estimates, total-covariance reduction and all-context positivity argument are written in the note.
 
-This was a bounded AI-agent primary-source applicability audit, not an exhaustive priority search. No novelty or priority certification is claimed for the theorem or its method. The exact underlying derivation is pinned in [REVIEW.md](REVIEW.md). The prepared v2.0.0 artifact has a separate review process recorded there.
+This was a bounded AI-agent primary-source applicability audit, not an exhaustive priority search. No novelty or priority certification is claimed for the theorem or its method. The exact underlying derivation is pinned in [REVIEW.md](REVIEW.md). The v2.0.0 artifact has a separate review process recorded there.
