@@ -45,3 +45,55 @@ The preceding v2.0.0 discussion remains historical attribution for the unchanged
 The input width is `N=8q+4`, the even residual width is `q>=1024`, and `m=q^2` is unchanged by restriction. The size theorem is `S >= (8/7)^((2 floor(q/(32 log_2 q))-1)/2) = exp(Omega(N/log N))`, not `exp(Omega(N))`. The additional argument proves bounded-row-space square positivity from the complete-row conditional estimates in FULL-NOTE.md and counts original multiplier/root monomials before any complement expansion. The previous ordinary-degree theorem alone does not imply this step.
 
 The source's Theorem 6.11 already gives exponential SA size via the same restriction. Its Theorems 2.3/5.18 already give exponential SoS size for the distinct perfect-matching encoding. Version 3 neither claims those results as new nor transfers its theorem to that encoding or the z-extended encoding. Novelty and priority of the exact present result remain unknown. Earlier no-size-consequence statements in this file concern v2.0.0 and v2.1.0 only. Source provenance, template transcription corrections and AI-review limitations are recorded in REVIEW.md.
+
+## Version 4.0.0: output-uniformity and the exact indexed map
+
+[OUTPUT-NOTE.md](OUTPUT-NOTE.md) proves the arbitrary-output extension at
+the same fixed parameters, rather than importing it from the identity
+statement. The primary source already supplies arbitrary-output local
+laws and restrictions. The additional check retains the actual augmented
+pairing rank, affine right-hand sides, deletion counts and normalization
+in the complete-row conditional estimates and all-context PSD assembly.
+The final size argument keeps source Definition 4.3's explicit monomial
+measure, including roots before squaring. The displayed D/E templates
+retain the visually checked corrections disclosed in the v3 review.
+
+The separate G_q corollary uses ordinary binary matrix multiplication,
+rank factorization, prefix circuit encoding and parameter arithmetic.
+These are established ingredients. Its seed length is 16q^3+8q^2 and
+output length q^4=Theta(s_q^(4/3)) for seed length s_q, with
+encoding-specific explicit SoS hardness for every nonrange output.
+Neither a generic SoS generator nor an iterated-stretch theorem is
+imported from the source's PCR results.
+
+The bounded contribution audit checked the live ECCC record and arXiv
+history on 12 September 2026: only arXiv:2608.08760v1 (9 August 2026)
+was listed, and Section 2.2 still leaves the bamboo SoS direction
+unpursued. This supports a source-relative extension description, not
+priority certification or completion of that entire direction.
+
+Additional primary comparisons examined in that audit were:
+
+- Dikstein, Dinur, Filmus and Harsha,
+  [arXiv:1804.08155v5](https://arxiv.org/abs/1804.08155v5), Theorems 3.2,
+  4.6 and 6.2: decomposition and approximate orthogonality on measured
+  complexes/expanding posets. These are methodological precedent, not an
+  identified theorem for this unchanged union-law moment form.
+- Dinur, Filmus, Harsha and Tulsiani,
+  [arXiv:2009.05218v1](https://arxiv.org/abs/2009.05218v1), Theorem 1.1:
+  explicit SoS-hard 3XOR from LSV complexes. This does not identify the
+  bamboo family or supply its encoding transfer.
+- Barak, Hopkins, Kelner, Kothari, Moitra and Potechin,
+  [arXiv:1604.03084v2](https://arxiv.org/abs/1604.03084v2), Theorem 1.1
+  and Sections 3, 6--7: pseudocalibration and model-specific PSD analysis
+  for planted clique. This is not a general guarantee that an arbitrary
+  prescribed consistent local functional is PSD.
+
+No exact subsuming theorem was identified in that bounded comparison;
+absence of a match does not establish novelty. The arbitrary-A extension
+and G_q statement here were separately checked after that audit.
+Known short matrix-identity proofs and their rational Hilbert-like IPS
+simulation remain compatible with an explicit-monomial lower bound:
+see [Hrubes--Tzameret](https://users.math.cas.cz/~hrubes/PDFs/DET.pdf) and
+[Pitassi--Tzameret, Section 3.2](https://eccc.weizmann.ac.il/report/2016/101/download).
+No unrestricted circuit-certificate lower bound is claimed.

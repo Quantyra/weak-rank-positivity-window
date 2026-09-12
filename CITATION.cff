@@ -1,26 +1,25 @@
 cff-version: 1.2.0
-message: "Version 3.0.0, 12 September 2026. Identify the version and informal AI-review status when citing."
-title: "Positivity and explicit SoS size for bamboo-tree weak rank"
+message: "Version 4.0.0, 12 September 2026. Identify the version and informal AI-review status when citing."
+title: "Output-uniform positivity and explicit SoS size for simple bamboo"
 authors:
   - name: "Quantyra Research"
 license: Apache-2.0
-abstract: "For even q>=1024, input width N=8q+4, m=q^2, and D=floor(q/(32 log_2 q)), the unaugmented simple bamboo encoding of I_m requires explicit real SoS certificate size at least (8/7)^((2D-1)/2), hence exp(Omega(N/log N)), under the source's axiom-multiplier and square-root monomial convention. The proof establishes bounded-row-space square positivity and applies a credited random restriction to residual width q. Earlier full-variable ordinary-degree positivity and its exact degree corollary are preserved. Informal mathematics with AI-agent review; novelty and priority are unknown."
+abstract: "For every Boolean output A at even q>=1024, m=q^2, N=8q+4 and D=floor(q/(32 log_2 q)), the specified simple-bamboo encoding has explicit real SoS refutation size at least (8/7)^((2D-1)/2). The proof checks arbitrary-output complete-row positivity and applies the credited restriction to residual width q. A separate indexed, encoding-specific generator corollary has seed length s=16q^3+8q^2 and output length q^4=Theta(s^(4/3)); in-range outputs are satisfiable and the refutation statement is vacuous there. The measure counts explicit multiplier/root monomials, not arithmetic circuits. Informal AI-reviewed mathematics; novelty and priority are unknown."
 keywords:
   - weak rank principle
   - local distributions
   - conditional correlation
   - positivity
-  - Boolean polynomials
   - sum of squares
-  - certificate degree
   - certificate size
-version: "3.0.0"
-date-released: 2026-09-12
+  - proof complexity generators
+version: "4.0.0"
+date-released: "2026-09-12"
 url: "https://github.com/Quantyra/weak-rank-positivity-window"
 preferred-citation:
   type: report
-  title: "Positivity and explicit SoS size for bamboo-tree weak rank"
+  title: "Output-uniform positivity and explicit SoS size for simple bamboo"
   authors:
     - name: "Quantyra Research"
   year: 2026
-  version: "3.0.0"
+  version: "4.0.0"

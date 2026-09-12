@@ -1,5 +1,82 @@
 # Contribution, provenance, and review disclosure
 
+## Version 4.0.0: arbitrary-output extension and indexed corollary
+
+Version 4.0.0, 12 September 2026. [OUTPUT-NOTE.md](OUTPUT-NOTE.md)
+contains the complete fixed-parameter arbitrary-A proof and the separate
+G_q corollary. Its source is formal-pvnp commit
+**4b748b22aa87587f761ddd2d99f342f427a9b0c9**. The main source proof is
+research/p-equals-np/2026-09-12-bamboo-output-uniformity.md, SHA256
+`CADA42936367F0F238BEE5EEEAB873BB9535EE463C1C8F5EA85D5A566170A7D9`.
+The corollary is derived in the source review, with both mathematical
+reviews independently checking its exact map, encoding and costs.
+
+The extension author supplied the explicit arbitrary-output fiber,
+normalization and size proof. The source reviewer supplied the separate
+generator derivation and source/model verification. Initial and fresh
+mathematical reviewers supplied actual-file verification without author
+construction or repair. The independent scope reviewer supplied claim
+and readiness checks; one excess terminal blank line in that review
+was removed before source integration, without textual changes.
+
+| Source review role | Record in formal-pvnp research/p-equals-np/ | Verdict |
+|---|---|---|
+| Source/model and complexity | 2026-09-12-bamboo-output-source-review.md | GO |
+| Initial independent mathematical proof | 2026-09-12-bamboo-output-proof-review.md | PASS theorem and exact implication |
+| Fresh independent adversarial mathematics | 2026-09-12-bamboo-output-fresh-review.md | PASS theorem and exact implication |
+| Nonclaims/scientific readiness | 2026-09-12-bamboo-output-nonclaims-review.md | Internal GO; public extraction preparation required |
+
+Their final working-file SHA256 pins are respectively
+`F95B9530A6ADBC50430003E8331691BD302F9347A17F3A052152B19936CE60F2`,
+`9534EDF20A3922DE61997A1E053E9707DFBD1B472F579C72CF86364C64EB65F2`,
+`9E1AE507443B72D008D91FE86EEBCE858DDEA9E112E0963DECE84B83AF14BFC5`,
+and `7AD4490421005C8169E450BACF4F1B514A923395D4A0BEC30763CABB95DD66E7`.
+Git normalizes text line endings; the commit pins the exact repository
+blobs. These source verdicts do not substitute for review of this extraction.
+
+The extracted proof has SHA256 `8b37a7b333bcf2bd0cd4552364486dc3b5fa3e930601fb8168a890c19db28be2`, 22963 bytes,
+Git blob `069565e25d8d991476f80bdfb6385972a62571d4`. Its separate actual-file extraction reviews returned the following
+scientific verdicts on 12 September 2026:
+
+| Actual public extraction lens | Record in formal-pvnp research/p-equals-np/ | Verdict |
+|---|---|---|
+| Independent mathematics, `output_fresh_proof` | 2026-09-12-bamboo-output-public-proof-review.md | PASS complete proof and separately stated G_q corollary; no construction or repair |
+| Source/nonclaims/readiness, `output_scope_review` | 2026-09-12-bamboo-output-public-scope-review.md | GO exact source, scope, contribution description and scientific readiness |
+
+The mathematical reviewer read the entire OUTPUT-NOTE, complete linked
+FULL-NOTE and SIZE-NOTE, and accompanying metadata. Its private review
+SHA256 is `98A2379BF3A7A02EA619FBE1D8A00F9227E5FEF1705D28E2A32FF74FE8F769EE`.
+The source/scope reviewer inspected the complete candidate, preserved
+Git blobs, CFF schema, source contracts, attribution and claim boundaries,
+then read the actual mathematical PASS. Neither requested a mathematical
+or theorem-scope repair. The scope reviewer did identify a UTF-8 encoding
+regression in the historical v2.1 REVIEW paragraph. The extraction author
+restored the entire historical suffix exactly from the v3 Git blob;
+this metadata-only correction did not change OUTPUT-NOTE or its hash.
+
+These verdicts are distinct from the underlying source reviews and do
+not assert publication or authorize it. The integrated review metadata
+receives a separate actual-file recheck before the owner's exact-candidate
+decision. All mathematics and reviews are informal AI work, not human
+peer review, Lean verification or novelty certification. The work uses
+established tools and restriction machinery; its source-relative increment
+is output uniformity at fixed m=q^2, with no improved exponent or iteration.
+
+NOTE.md, FULL-NOTE.md, COROLLARY.md, SIZE-NOTE.md and LICENSE remain
+exact Git blobs from v3.0.0 commit
+`613ceb80a6211097cd8e353c47ad79ba3069ecb5`. Their earlier scope statements
+are historical. The D/E corrections in the unchanged size note are the
+source transcription corrections disclosed below, not new templates.
+No arbitrary-m theorem, other encoding, circuit-compressed certificate
+hardness, computational pseudorandomness, inversion hardness, all-length
+padding, amplification, nearly quadratic/exponential stretch, general SAT
+runtime, circuit lower bound or P-versus-NP result is claimed.
+
+## Historical v3.0.0 and earlier record
+
+The following sections retain prior attribution and review history.
+Their identity-only or no-generator scope concerns those versions.
+
 ## Version 3.0.0: explicit SoS size consequence
 
 Version 3.0.0, 12 September 2026. [SIZE-NOTE.md](SIZE-NOTE.md) proves that for even `q>=1024`, input width `N=8q+4`, `m=q^2`, and `D=floor(q/(32 log_2 q))`, every specified explicit real SoS certificate for the unaugmented simple bamboo encoding has `S >= (8/7)^((2D-1)/2) = exp(Omega(N/log N))`. The size convention counts original axiom-multiplier and square-root monomials, before squares or complement substitutions are expanded. It is not an `exp(Omega(N))` result and does not cover circuit-compressed roots.
