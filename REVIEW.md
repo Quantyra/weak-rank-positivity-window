@@ -1,5 +1,39 @@
 # Contribution, provenance, and review disclosure
 
+## Version 3.0.0: explicit SoS size consequence
+
+Version 3.0.0, 12 September 2026. [SIZE-NOTE.md](SIZE-NOTE.md) proves that for even `q>=1024`, input width `N=8q+4`, `m=q^2`, and `D=floor(q/(32 log_2 q))`, every specified explicit real SoS certificate for the unaugmented simple bamboo encoding has `S >= (8/7)^((2D-1)/2) = exp(Omega(N/log N))`. The size convention counts original axiom-multiplier and square-root monomials, before squares or complement substitutions are expanded. It is not an `exp(Omega(N))` result and does not cover circuit-compressed roots.
+
+Underlying derivation repository: formal-pvnp. Exact source commit: **ea7a89576712fc21ae0127d688f703dfa05b1af1**. Main source record: research/p-equals-np/2026-09-12-bamboo-size-mechanism.md. The new step derives bounded-row-space square positivity from the earlier complete-row conditional estimates, then uses the primary source's existing Section 6.8 restriction and 6.9 survival bound with explicit root/multiplier counting. Residual width is q, not N, and m=q^2 is retained.
+
+The underlying corrected mathematical snapshot has SHA256 `BD3DD17A493D9F1F481FBBD3946882F3AFC0904935CF07F5F4F8B80F6C318258`. Its initial independent proof review and fresh independent adversarial proof review both returned PASS; the source/model and complexity review returned GO; the independent nonclaims/significance review returned GO-WITH-NOTES. The source commit pins the final integrated record and review files. Records in formal-pvnp research/p-equals-np/ are 2026-09-12-bamboo-size-proof-review.md, 2026-09-12-bamboo-size-fresh-review.md, 2026-09-12-bamboo-size-source-review.md, and 2026-09-12-bamboo-size-nonclaims-review.md.
+
+The author supplied the row-space derivation and size implication. The source reviewer supplied methodological guidance and corrected two initial template transcriptions using the rendered primary PDF: D's first row is `[1 * 1 0 0 * * *]`, and E's first row is `[1 0 0 1 * * * *]`. Both independent proof reviewers checked the corrected snapshot; neither supplied construction or mathematical repair. The fresh adversarial review also checked the rendered templates. These contributions are distinct from the earlier full-positivity theorem's authorship described below.
+
+The public extraction received separate actual-file mathematical and source/nonclaims/readiness reviews on 12 September 2026. Both inspected SIZE-NOTE.md (13,590 bytes; SHA256 `6d22e0f1d72fb5fc2dc5446ca56da4c820ea5e24bb33809c8bb2335917c93667`; Git blob `4f7f0750b2e805d65a1789ec3cc4fc43af6f521c`) and the relevant accompanying metadata. The mathematical reviewer reread the complete linked FULL-NOTE.md and independently checked the newly explicit original clause table and public equation references. The source/nonclaims reviewer inspected the complete extraction, preserved blobs, attribution and metadata and then read the actual mathematical PASS. Neither requested a mathematical, source or scope repair to this public extraction.
+
+| Actual extraction role | Record in formal-pvnp research/p-equals-np/ | Scientific verdict |
+|---|---|---|
+| Independent mathematical proof, `bamboo_size_fresh` | 2026-09-12-bamboo-size-public-proof-review.md | PASS for the complete extraction, exact size convention, row-space bridge, restriction and local annihilation; verification only. |
+| Source/nonclaims/readiness, `bamboo_size_nonclaims` | 2026-09-12-bamboo-size-public-nonclaims-review.md | GO for exact source applicability, attribution, scope and scientific readiness. |
+
+These extraction verdicts concern the actual public artifact and are distinct from the underlying source reviews. The mathematical artifact is unchanged by this review-status integration. The final integrated metadata receives a separate recheck before the exact-candidate publication decision. Scientific review metadata does not assert that publication has occurred. No novelty, priority, human peer-review, or Lean-verification certification is asserted.
+
+The following earlier artifact Git blobs are preserved exactly from v2.1.0 commit `8d22bf56cbe3f81278b436ca10840cbed0d23d63`:
+
+| Artifact | Git blob |
+|---|---|
+| NOTE.md | d66725171fe42f78541382d7b31902230e90a9bf |
+| FULL-NOTE.md | 6a5f09aadfd0732a6a7824b22e1aec3c350bdc45 |
+| COROLLARY.md | 5a515f8a0301bc6de46edd72438c37e03a1084dc |
+| LICENSE | f5e23913507cd1b6fd26f7cf8a6487b37484d8f6 |
+
+Their no-size-claim statements describe their historical version scope. Version 3 adds only the separately stated encoding-specific size theorem. No other-family transfer, general proof-system or arbitrary SAT-runtime lower bound, circuit lower bound, sharp positivity threshold, or P-versus-NP conclusion is claimed.
+
+## Historical v2.1.0 and earlier record
+
+The remainder preserves earlier attribution and review history. Its no-size-claim statements concern those versions, not the separately added v3.0.0 theorem.
+
 ## Version 2.1.0: exact SoS degree corollary
 
 Version 2.1.0, 12 September 2026. [COROLLARY.md](COROLLARY.md) excludes raw real SoS certificate degree at most 2D+1 for the exact Boolean clause encoding BT•Rank′_n^m(I_m), for even n>=1024, m=n^2 and D=floor(n/(32 log_2 n)); minimum degree is therefore at least 2D+2. It records two explicit degree-preserving simple-bamboo transfers. The corollary is the standard positive-functional implication of the existing full-square theorem after complete axiom and degree accounting. It is not a new lower-bound mechanism.

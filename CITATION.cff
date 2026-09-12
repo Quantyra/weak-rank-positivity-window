@@ -1,10 +1,10 @@
 cff-version: 1.2.0
-message: "Version 2.1.0, 12 September 2026. Identify the version and informal AI-review status when citing."
-title: "A full-variable positivity window for the bamboo-tree weak-rank functional"
+message: "Version 3.0.0, 12 September 2026. Identify the version and informal AI-review status when citing."
+title: "Positivity and explicit SoS size for bamboo-tree weak rank"
 authors:
   - name: "Quantyra Research"
 license: Apache-2.0
-abstract: "For even n>=1024 and m=n^2, the specified restricted bamboo-tree weak-rank functional is positive on squares of actual X/Y/U polynomials of degree at most floor(n/(32 log_2 n)). The Boolean restricted simple bamboo encoding has no real SoS refutation of raw certificate degree at most 2D+1, where D=floor(n/(32 log_2 n)); two explicit simple-encoding transfers are given. This is a standard corollary of the positivity theorem, not a size lower bound. Informal mathematics with AI-agent review; novelty and priority are unknown."
+abstract: "For even q>=1024, input width N=8q+4, m=q^2, and D=floor(q/(32 log_2 q)), the unaugmented simple bamboo encoding of I_m requires explicit real SoS certificate size at least (8/7)^((2D-1)/2), hence exp(Omega(N/log N)), under the source's axiom-multiplier and square-root monomial convention. The proof establishes bounded-row-space square positivity and applies a credited random restriction to residual width q. Earlier full-variable ordinary-degree positivity and its exact degree corollary are preserved. Informal mathematics with AI-agent review; novelty and priority are unknown."
 keywords:
   - weak rank principle
   - local distributions
@@ -13,13 +13,14 @@ keywords:
   - Boolean polynomials
   - sum of squares
   - certificate degree
-version: "2.1.0"
+  - certificate size
+version: "3.0.0"
 date-released: 2026-09-12
 url: "https://github.com/Quantyra/weak-rank-positivity-window"
 preferred-citation:
   type: report
-  title: "A full-variable positivity window for the bamboo-tree weak-rank functional"
+  title: "Positivity and explicit SoS size for bamboo-tree weak rank"
   authors:
     - name: "Quantyra Research"
   year: 2026
-  version: "2.1.0"
+  version: "3.0.0"

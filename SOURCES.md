@@ -1,6 +1,6 @@
 # Sources and attribution
 
-The external source results below are credited imports and comparisons. This note does not claim their machinery as original. Links identify primary works; no source text or figures are redistributed.
+The external source results below are credited imports and comparisons. This note does not claim their machinery as original. Links identify primary works. SIZE-NOTE.md restates the small restriction templates and exact mathematical contracts with attribution; no primary PDF or source figure is redistributed.
 
 ## Functional being analyzed
 
@@ -37,3 +37,11 @@ This was a bounded AI-agent primary-source applicability audit, not an exhaustiv
 The source's Lemma 6.4 gives an SA row-degree lower bound for the same restricted encoding. Its Theorem 6.11 uses a separate SA size argument. Theorems 2.3/5.18 already give exponential SoS size hardness for the distinct PMRank perfect-matching encoding, using the matching-extension reduction in Lemma 5.17. Those extension variables are not the present prefix U variables. No reduction to that encoding or to the z-extended BTRank system is supplied here. The narrow comparison neither certifies novelty nor imports a size lower bound into the corollary.
 
 The preceding v2.0.0 discussion remains historical attribution for the unchanged positivity proof. Version 2.1.0 adds the explicit corollary; no SoS size, general SAT, circuit, or complexity-class consequence is claimed.
+
+## Version 3.0.0: row-space positivity and explicit SoS size
+
+[SIZE-NOTE.md](SIZE-NOTE.md) uses source Definition 4.3's exact size convention `sum_i ||f_i||||g_i||+sum_j ||h_j||`, with roots explicitly represented before squaring. It states the complete original Definition 6.1 clause-falsification encoding. Source Definitions 6.5--6.6 and Lemma 6.7 supply the residual complete-row local laws and consistency. Definition 6.8 supplies the exact independent row-type/parity-bit substitution, including both D/E templates, endpoints and boundary-prefix images; Lemma 6.9 supplies survival probability `(sqrt(7/8))^r` for the interior typed-row support r. Lemma 6.10 supplies the local semantic clause check, not an imported arbitrary-sign equality-ideal simulation. These are credited source results, not new restrictions invented here.
+
+The input width is `N=8q+4`, the even residual width is `q>=1024`, and `m=q^2` is unchanged by restriction. The size theorem is `S >= (8/7)^((2 floor(q/(32 log_2 q))-1)/2) = exp(Omega(N/log N))`, not `exp(Omega(N))`. The additional argument proves bounded-row-space square positivity from the complete-row conditional estimates in FULL-NOTE.md and counts original multiplier/root monomials before any complement expansion. The previous ordinary-degree theorem alone does not imply this step.
+
+The source's Theorem 6.11 already gives exponential SA size via the same restriction. Its Theorems 2.3/5.18 already give exponential SoS size for the distinct perfect-matching encoding. Version 3 neither claims those results as new nor transfers its theorem to that encoding or the z-extended encoding. Novelty and priority of the exact present result remain unknown. Earlier no-size-consequence statements in this file concern v2.0.0 and v2.1.0 only. Source provenance, template transcription corrections and AI-review limitations are recorded in REVIEW.md.
