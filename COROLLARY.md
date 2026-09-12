@@ -194,4 +194,3 @@ runtime lower bound for arbitrary SAT solvers, no general proof-system
 lower bound, no NP/coNP or P-versus-NP conclusion, and no algorithm.
 It is a bounded proof-complexity consequence for a specified encoding,
 with two explicit degree-preserving transfers.
-
