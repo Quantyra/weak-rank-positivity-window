@@ -29,3 +29,11 @@ These comparisons came from a bounded AI-agent primary-source audit. They neithe
 The full conditional-correlation argument needs no junction-tree or global-law construction. The source's local consistency is credited, while the conditional rank estimates, total-covariance reduction and all-context positivity argument are written in the note.
 
 This was a bounded AI-agent primary-source applicability audit, not an exhaustive priority search. No novelty or priority certification is claimed for the theorem or its method. The exact underlying derivation is pinned in [REVIEW.md](REVIEW.md). The v2.0.0 artifact has a separate review process recorded there.
+
+## Version 2.1.0: exact certificate-degree consequence
+
+[COROLLARY.md](COROLLARY.md) additionally uses source Definition 4.3's ordinary, unreduced SoS certificate-degree convention and Definition 6.1's complete simple bamboo clause list, including the boundary restriction immediately before Section 6.1. Boolean equations are expressly included; optional literal twins are eliminated by complements without degree increase. Source local satisfaction, normalization and consistency annihilate each bounded-degree axiom multiple. The v2 full-square theorem handles every square root. The positive-functional contradiction is standard; this extraction contributes exact encoding and degree accounting, not a new proof-complexity mechanism.
+
+The source's Lemma 6.4 gives an SA row-degree lower bound for the same restricted encoding. Its Theorem 6.11 uses a separate SA size argument. Theorems 2.3/5.18 already give exponential SoS size hardness for the distinct PMRank perfect-matching encoding, using the matching-extension reduction in Lemma 5.17. Those extension variables are not the present prefix U variables. No reduction to that encoding or to the z-extended BTRank system is supplied here. The narrow comparison neither certifies novelty nor imports a size lower bound into the corollary.
+
+The preceding v2.0.0 discussion remains historical attribution for the unchanged positivity proof. Version 2.1.0 adds the explicit corollary; no SoS size, general SAT, circuit, or complexity-class consequence is claimed.
