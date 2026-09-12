@@ -1,44 +1,55 @@
 # Output-uniform positivity and explicit SoS size for simple bamboo
 
-**Version 4.0.0, 12 September 2026.** [OUTPUT-NOTE.md](OUTPUT-NOTE.md)
-extends the identity-output result to every Boolean matrix A, at even
-q>=1024, residual width q, input width N=8q+4, m=q^2 and
-D=floor(q/(32 log_2 q)). It proves square positivity for arbitrary sums
-whose individual monomials use at most 2D typed rows, without an ordinary
-degree bound. The source's A-preserving restriction then gives explicit
-SoS certificate size at least (8/7)^((2D-1)/2)=exp(Omega(N/log N)).
+**Version 4.1.0, 12 September 2026.** [DIMENSION-NOTE.md](DIMENSION-NOTE.md)
+is a dimension-budget addendum to the existing argument. For even q>=1024,
+N=8q+4 and integer 8q+4<m<=2^(q/32-1), it sets
+D=floor(q/(32 log_2(2m)))>=1 and proves, for every fixed Boolean output A,
+explicit real SoS refutation size at least (8/7)^(D-1/2) for the exact
+unrestricted simple-bamboo encoding. The source restriction keeps m and A
+and reduces input width N to residual width q. The proof checks complete-row
+square positivity and the full ambient support count.
 
-The measure is S=sum_i ||f_i||||g_i||+sum_j ||h_j|| for the real identity
-sum_i f_i g_i+sum_j h_j^2=-1. It counts original explicit multiplier and
-root monomials, before squaring or Boolean reduction, with no degree
-limit or coefficient-bit charge. It is not arithmetic-circuit size.
-The exact simple-bamboo clause encoding and proof are stated in the note.
+The measure is S=sum_i ||f_i||||g_i||+sum_j ||h_j|| for the identity
+sum_i f_i g_i+sum_j h_j^2=-1. It counts ordinary polynomial monomials before
+Boolean reduction, roots before squaring, with no degree limit or
+coefficient-bit charge. It is not arithmetic-circuit or implicit-root size.
+The general window can have constant D; a sufficient condition for a bound
+superpolynomial in actual formula length is q/(log m)^2 tending to infinity.
 
-A separate corollary specifies G_q(X,Y)=XY over F_2 with seed length
-s_q=16q^3+8q^2 and output length t_q=q^4=Theta(s_q^(4/3)). Every nonrange
-output has the same explicit SoS lower bound under the stated inversion
-encoding. Prefix variables are encoding witnesses, not seed bits.
-Range is exactly rank(A)<=N: in-range outputs are satisfiable and their
-refutation-size statement is vacuous. Rank testing and preimage recovery
-are polynomial-time; this encoding-specific proof-complexity generator
-does not assert computational pseudorandomness or inversion hardness.
+A separately checked indexed family uses integers r>=32,
+q=2r^3, m=2^r and N=16r^3+4. The same map G_r(X,Y)=XY over F_2 has
 
-[SIZE-NOTE.md](SIZE-NOTE.md) preserves v3's identity-output size theorem.
-[FULL-NOTE.md](FULL-NOTE.md), [COROLLARY.md](COROLLARY.md), and
-[NOTE.md](NOTE.md) preserve the earlier full-variable ordinary-degree,
-certificate-degree, and X-only results. These four notes and
-[LICENSE](LICENSE) are unchanged Git blobs from v3.0.0. Historical
-no-size or identity-only statements retain their earlier-version scope;
-the arbitrary-output theorem is stated separately in v4.
+    s_r=2^(r+1)(16r^3+4), t_r=2^(2r),
+    t_r=Theta(s_r^2/(log s_r)^6),
+    S >= (8/7)^(r^2/64)=exp(Omega((log s_r)^2)).
 
-The increment is output uniformity, not a better exponent, newly invented
-restriction or general SoS method. Novelty and priority are unknown.
-This is informal mathematics with AI-agent review, not human peer review
-or Lean verification. No arbitrary-m, other-encoding, all-length padding,
-iteration, amplification, nearly quadratic/exponential stretch, general
-SAT runtime, circuit lower-bound or P-versus-NP conclusion is claimed.
+The output-to-seed ratio is Theta(s_r/(log s_r)^6), distinct from output
+length. Its CNF has 2mN+m^2N variables and (6N-2)m^2 clauses before
+Boolean/twin additions, width at most four, and O(4^r r^4) explicit bits.
+Evaluation and construction are polynomial in actual seed/formula lengths,
+not the short index r. Prefix variables are witnesses, not seed bits.
 
-[SOURCES.md](SOURCES.md) gives attribution and comparisons;
-[REVIEW.md](REVIEW.md) gives exact provenance and review status.
+Range is exactly rank_F2(A)<=N. In-range outputs are satisfiable and their
+refutation bound is vacuous. Rank testing and preimage recovery remain
+polynomial-time. The indexed nonrange bound is superpolynomial in seed,
+output and formula lengths, and asserts no computational pseudorandomness.
+
+[OUTPUT-NOTE.md](OUTPUT-NOTE.md) preserves v4's stronger m=q^2 theorem,
+with D=floor(q/(32 log_2 q)), output Theta(s^(4/3)) and hardness
+exp(Omega(s^(1/3)/log s)). Version 4.1 trades a larger indexed output for
+a weaker seed-normalized hardness scale, using the same mechanism.
+[SIZE-NOTE.md](SIZE-NOTE.md), [FULL-NOTE.md](FULL-NOTE.md),
+[COROLLARY.md](COROLLARY.md), [NOTE.md](NOTE.md) and [LICENSE](LICENSE)
+also retain their exact previous Git blobs and historical scopes.
+
+This is a modest re-budgeting extension. Near-quadratic rank-map geometry
+and the primary source's stronger different-system/different-encoding
+results are credited in [SOURCES.md](SOURCES.md). Novelty and priority are
+unknown. Review is informal AI analysis, not human peer review or Lean
+verification. No new general method, optimal window, unbounded-m bound,
+all-length padding, iteration, function generator, compressed-proof bound,
+general SAT runtime, circuit lower bound or P-versus-NP conclusion is claimed.
+
+[REVIEW.md](REVIEW.md) records provenance and actual review status.
 Maintained by Quantyra Research under [Apache 2.0](LICENSE).
 Citation metadata is in [CITATION.cff](CITATION.cff).

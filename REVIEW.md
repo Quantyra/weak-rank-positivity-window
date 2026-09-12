@@ -1,3 +1,85 @@
+# Version 4.1.0: dimension-budget addendum review
+
+Version 4.1.0, 12 September 2026. This section precedes the exact unchanged
+v4 REVIEW bytes below. [DIMENSION-NOTE.md](DIMENSION-NOTE.md) is a modest
+parameter-budget addendum to the same artifact, not a new lower-bound
+method or separate generator construction. The old fixed-m theorem is
+stronger at its own parameters and is retained. The near-quadratic indexed
+output trades away part of its seed-normalized hardness exponent.
+
+The mathematical source is formal-pvnp commit
+`3d381934744c48f7afa913ac650037a477148a19`, note
+`research/p-equals-np/2026-09-12-bamboo-dimension-budget.md`, 29436 bytes,
+SHA256 `da37598d495efc1da7302fbc664f74b45302a8f6ec12a3de423b9ab1107f5676`,
+Git blob `121e62bc15926696611baf8cb00dca6d4c16643d`.
+The author supplied the full dimension derivation and separate indexed
+implication. Source/complexity review supplied source-domain and cost
+guidance; initial and fresh independent mathematical reviews supplied
+actual-file verification without author repair. Separate scope review
+checked claims and readiness. These were informal AI roles, not human
+peer review, Lean verification or novelty certification.
+
+| Internal source lens | Record in formal-pvnp research/p-equals-np/ | Verdict | SHA256 |
+|---|---|---|---|
+| Source/complexity | 2026-09-12-bamboo-dimension-source-review.md | PASS | `B90F6E5947C8FCBF4446CA238A1C818CD8AD782BEBFC6FFB16D9F088638428DC` |
+| Initial independent mathematics | 2026-09-12-bamboo-dimension-proof-review.md | PASS; no repair | `57F076CABFE1883DE6BA20154C85B3F591063AC3BF8E4467ACB102E5AF1B5CF1` |
+| Fresh independent mathematics | 2026-09-12-bamboo-dimension-fresh-review.md | PASS; no repair | `4D8D25243713E733DE96C633BBBC580ACB7B5E4151A01F8A505D59D359107C35` |
+| Nonclaims/readiness | 2026-09-12-bamboo-dimension-nonclaims-review.md | Internal GO; public preparation required | `EC0FD5289903607BE31D70A4B53D6080DED633C24E2E06F6254234FF2B3F7905` |
+
+Two independent significance assessments are integrated at source commit
+`2c9aaef67bca05c17a1a3eb6ce50e77793f0b7c6`: dimension-significance
+SHA256 `81fdf5ebea5438768a0696aa39e782db827d701136f23885143b126128c55947`
+and dimension-significance-challenge SHA256
+`d2aa7cb3b9aff87df787e4518fe4382a4abab0a00047c5227c1aefa2c2cc853b`.
+Both recommended a modest existing-artifact update, not a standalone new
+mechanism. A local cached-file locator in the second assessment was replaced
+by a source description before integration; substantive text and verdict
+were unchanged. These assessments are not additional correctness reviews.
+They identify a legitimate wider quantitative statement, with unknown
+priority and no claim of journal-level significance or P-versus-NP progress.
+
+The extracted DIMENSION-NOTE has 30347 bytes, SHA256 `4b9acce60dd1eb328e711eb894e080b0fdbcee9b5ab1b1b3ee71f564524e2f4b`,
+Git blob `e37400ab3f45a751e8472f8052ddf5bab6e539e0`. The mathematical body matches the committed source
+from 'Statements and exact conventions' through the complete indexed proof,
+except removing the 'author claim' label from the corollary heading.
+Public-safe introductory links, provenance and final contribution wording
+replace internal workflow text. No equation, hypothesis, proof step or
+parameter cost is changed by extraction. Existing D/E visual corrections
+are inherited unchanged from the reviewed source and earlier public notes.
+
+| Actual whole-public-extraction lens | Record in formal-pvnp research/p-equals-np/ | Scientific verdict |
+|---|---|---|
+| Independent mathematics, `dimension_public_math` | 2026-09-12-bamboo-dimension-public-proof-review.md | PASS entire proof and indexed implication; no construction or repair |
+| Source/scope/readiness, `output_scope_review` | 2026-09-12-bamboo-dimension-public-nonclaims-review.md | GO exact source, claims, contribution description and scientific readiness |
+
+The mathematical reviewer read the whole actual note, independently checked
+the complete source-body comparison, conditional PSD, exact size transfer,
+integer window and indexed consequence. Its final private receipt SHA256 is
+`5ee03a228c240339504eb0b0731c7fda9fb62a4384db2d604a2bdf52dc338255`.
+The receipt's local repository locator was replaced by its repository name
+before source integration; no proof, verdict or substantive review text
+changed. This editorial hygiene is separate from mathematical verification.
+
+The source/scope reviewer read the complete candidate, both significance
+assessments and the actual mathematical PASS, and checked all six preserved
+Git blobs, historical REVIEW/SOURCES bytes, CFF schema, links and claim
+boundaries. Final integration of this receipt table and release text is
+checked in that private scope record before the candidate commit. No
+mathematical or theorem-scope repair was requested by either extraction
+reviewer. These informal AI scientific verdicts do not constitute human
+peer review, Lean verification, novelty certification or an owner publication
+decision. The exact candidate and release still require the owner's gate;
+this record alone authorizes no push, tag, release or live About change.
+
+NOTE.md, FULL-NOTE.md, COROLLARY.md, SIZE-NOTE.md, OUTPUT-NOTE.md and
+LICENSE retain their exact v4 Git blobs. The complete historical REVIEW
+bytes follow unchanged, including its earlier template/UTF-8 correction
+and reviewer disclosures. Historical scope statements apply to their
+versions; the new dimension theorem has its own exact assumptions above.
+No additional novel method, optimality, all-length/tree amplification,
+computational pseudorandomness, compressed-certificate, general SAT,
+circuit-lower-bound or P-versus-NP claim is made.
+
 # Contribution, provenance, and review disclosure
 
 ## Version 4.0.0: arbitrary-output extension and indexed corollary

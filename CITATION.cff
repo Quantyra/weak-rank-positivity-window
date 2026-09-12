@@ -1,25 +1,25 @@
 cff-version: 1.2.0
-message: "Version 4.0.0, 12 September 2026. Identify the version and informal AI-review status when citing."
-title: "Output-uniform positivity and explicit SoS size for simple bamboo"
+message: Version 4.1.0, 12 September 2026. Identify the version and informal AI-review status when citing.
+title: Output-uniform positivity and explicit SoS size for simple bamboo
 authors:
-  - name: "Quantyra Research"
+- name: Quantyra Research
 license: Apache-2.0
-abstract: "For every Boolean output A at even q>=1024, m=q^2, N=8q+4 and D=floor(q/(32 log_2 q)), the specified simple-bamboo encoding has explicit real SoS refutation size at least (8/7)^((2D-1)/2). The proof checks arbitrary-output complete-row positivity and applies the credited restriction to residual width q. A separate indexed, encoding-specific generator corollary has seed length s=16q^3+8q^2 and output length q^4=Theta(s^(4/3)); in-range outputs are satisfiable and the refutation statement is vacuous there. The measure counts explicit multiplier/root monomials, not arithmetic circuits. Informal AI-reviewed mathematics; novelty and priority are unknown."
+abstract: Dimension-budget addendum for the existing explicit real SoS simple-bamboo argument. For even q>=1024, N=8q+4, integer N<m<=2^(q/32-1), and D=floor(q/(32 log_2(2m)))>=1, every fixed Boolean output has refutation size at least (8/7)^(D-1/2) in the exact explicit-monomial measure. The old stronger m=q^2 theorem is preserved. An indexed choice q=2r^3,m=2^r,r>=32 has seed s=2^(r+1)(16r^3+4), output t=2^(2r)=Theta(s^2/(log s)^6), and bound exp(Omega((log s)^2)); the full dimension window is not uniformly superpolynomial in formula length. Rank membership and preimages remain polynomial-time, and in-range refutation cases are vacuous. This is a modest extension of credited proof estimates, not a new generator method. Informal AI review; novelty and priority unknown.
 keywords:
-  - weak rank principle
-  - local distributions
-  - conditional correlation
-  - positivity
-  - sum of squares
-  - certificate size
-  - proof complexity generators
-version: "4.0.0"
-date-released: "2026-09-12"
-url: "https://github.com/Quantyra/weak-rank-positivity-window"
+- weak rank principle
+- local distributions
+- conditional correlation
+- positivity
+- sum of squares
+- certificate size
+- proof complexity generators
+version: 4.1.0
+date-released: '2026-09-12'
+url: https://github.com/Quantyra/weak-rank-positivity-window
 preferred-citation:
   type: report
-  title: "Output-uniform positivity and explicit SoS size for simple bamboo"
+  title: Output-uniform positivity and explicit SoS size for simple bamboo
   authors:
-    - name: "Quantyra Research"
+  - name: Quantyra Research
   year: 2026
-  version: "4.0.0"
+  version: 4.1.0

@@ -97,3 +97,45 @@ simulation remain compatible with an explicit-monomial lower bound:
 see [Hrubes--Tzameret](https://users.math.cas.cz/~hrubes/PDFs/DET.pdf) and
 [Pitassi--Tzameret, Section 3.2](https://eccc.weizmann.ac.il/report/2016/101/download).
 No unrestricted circuit-certificate lower bound is claimed.
+
+## Version 4.1.0: a conservative dimension-budget addendum
+
+[DIMENSION-NOTE.md](DIMENSION-NOTE.md) repeats the complete proof with an
+explicit ambient-m count. Its new arithmetic is
+L=sum_(j<=2D)binom(2m,j)<=2(2m)^(2D), charged against
+2^(-q/2+4D+5), with D=floor(q/(32 log_2(2m)))>=1. The unchanged conditional
+estimates then give L*epsilon<=2^(6-5q/16)<1/2. This is a modest extension
+of the earlier proof estimates, not substitution into v4's fixed-m theorem
+or a new positivity mechanism. At m=q^2 the old stronger D is preserved.
+
+The inspected primary source is Garlik--Gryaznov--Ren--Tzameret,
+[TR26-133](https://eccc.weizmann.ac.il/report/2026/133/) /
+[arXiv:2608.08760v1](https://arxiv.org/abs/2608.08760v1). Its arbitrary-m
+local laws and consistency (Definitions 6.5--6.6, Lemma 6.7) and restriction
+(Definition 6.8, Lemmas 6.9--6.10) supply the same interfaces. Definition 4.3
+supplies the exact explicit-monomial size convention. Its Theorem 6.11
+already proves exponential SA size for this simple-bamboo encoding for
+arbitrary m>n>=20 with 16 dividing n-4. Its Theorem 5.18 / informal
+Theorem 2.3 gives arbitrary-m exponential SoS size for the distinct
+perfect-matching CNF. Those stronger statements do not identify the exact
+simple-bamboo real square-positivity result or provide a charged
+explicit-monomial encoding transfer here.
+
+Near-quadratic rank-map output geometry is already advertised by the
+primary source. The new indexed choice q=2r^3,m=2^r,r>=32 is parameter
+arithmetic for the same one-copy map: s=2^(r+1)(16r^3+4),t=2^(2r),
+t=Theta(s^2/(log s)^6), and size at least (8/7)^(r^2/64). It yields a
+larger output but a weaker seed-normalized bound than v4's subfamily.
+The output-length claim is not an expansion-ratio or function-generator
+claim. The full dimension window is not uniformly superpolynomial in
+formula length; the displayed indexed subfamily is.
+
+Two independent significance assessments found a modest citable update
+appropriate, while rejecting a standalone methodological-advance framing.
+The bounded comparison on 12 September 2026 found only arXiv v1 listed;
+no exhaustive citation closure or priority certification is claimed. The
+near-quadratic geometry, Fourier/rank/Gram ingredients and imported
+restriction are established machinery. The exact wider SoS encoding
+window is a source-relative guarantee; its priority remains unknown.
+Historical no-arbitrary-m or no-near-quadratic statements above and in
+preserved notes describe the scope of those earlier versions.
