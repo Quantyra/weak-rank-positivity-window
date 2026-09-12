@@ -1,22 +1,23 @@
 cff-version: 1.2.0
-message: "If citing this technical note, identify its version and AI-review status."
-title: "An X-only positivity window for the bamboo-tree weak-rank functional"
+message: "Prepared v2.0.0, not yet published. Identify the version and informal AI-review status when citing."
+title: "A full-variable positivity window for the bamboo-tree weak-rank functional"
 authors:
   - name: "Quantyra Research"
 license: Apache-2.0
-abstract: "An elementary analysis of the X-only positivity window of a published bamboo-tree weak-rank functional; novelty and priority are unknown."
+abstract: "For even n>=1024 and m=n^2, the specified restricted bamboo-tree weak-rank functional is positive on squares of actual X/Y/U polynomials of degree at most floor(n/(32 log_2 n)). Informal AI-reviewed mathematics; novelty and priority are unknown."
 keywords:
   - weak rank principle
   - local distributions
+  - conditional correlation
   - positivity
   - Boolean polynomials
-version: 1.0.0
+version: "2.0.0"
 date-released: 2026-09-12
 url: "https://github.com/Quantyra/weak-rank-positivity-window"
 preferred-citation:
   type: report
-  title: "An X-only positivity window for the bamboo-tree weak-rank functional"
+  title: "A full-variable positivity window for the bamboo-tree weak-rank functional"
   authors:
     - name: "Quantyra Research"
   year: 2026
-  version: 1.0.0
+  version: "2.0.0"

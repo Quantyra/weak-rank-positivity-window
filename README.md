@@ -1,11 +1,11 @@
-# An X-only positivity window for the bamboo-tree weak-rank functional
+# A full-variable positivity window for the bamboo-tree weak-rank functional
 
-A modest technical note analyzing the X marginal of the bamboo-tree functional introduced by Garlik, Gryaznov, Ren, and Tzameret.
+**Prepared v2.0.0, 12 September 2026; not yet published.** Exact derivation provenance and informal AI-review status are in [REVIEW.md](REVIEW.md).
 
-For m=n^2 and even n, its first X-only negative-square degree has order n/log n: the note proves positivity for every X polynomial below an explicit window and gives an explicit witness above it. Degree refers to p, with p^2 reduced in the Boolean quotient before evaluation.
+For even n>=1024, m=n^2, and D=floor(n/(32 log_2 n)), the specified restricted bamboo-tree functional satisfies R(p^2)>=0 for every actual ordinary-degree-at-most-D X/Y/U polynomial. The proof retains its source rank restrictions, output constraints, and prefix auxiliary variables.
 
-Read the complete statement, imported-source contract, and proof in [NOTE.md](NOTE.md). Primary references and related-work limits appear in [SOURCES.md](SOURCES.md); AI contribution and review status appear in [REVIEW.md](REVIEW.md).
+Read the standalone proof in [FULL-NOTE.md](FULL-NOTE.md). The prior [X-only note and upper-window witness](NOTE.md) are preserved unchanged from v1.0.0. [SOURCES.md](SOURCES.md) identifies the published functional and primary comparisons; [REVIEW.md](REVIEW.md) records contributions and the distinction between underlying-proof review and this candidate's review.
 
-Version 1.0.0. Novelty and priority are unknown. The result does not establish full X/Y/auxiliary positivity, a feasible SoS pseudoexpectation, a proof-complexity lower bound, or a P-versus-NP conclusion.
+Novelty and priority are unknown. This is informal mathematics with AI-agent review, not human peer review or Lean verification. No SoS degree/size lower bound, general SAT algorithm, sharp full-variable threshold, or P-versus-NP conclusion is claimed.
 
-Maintained by Quantyra Research. Licensed under [Apache 2.0](LICENSE). Citation metadata is in [CITATION.cff](CITATION.cff).
+Maintained by Quantyra Research. Licensed under [Apache 2.0](LICENSE). Citation metadata for the prepared version is in [CITATION.cff](CITATION.cff). The published v1.0.0 history is preserved.
